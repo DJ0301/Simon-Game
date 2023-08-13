@@ -27,15 +27,21 @@ const nextSequence = () =>
 }
 $(document).on('keypress',function()
     {
-        
-        if(!started)
+      startGame();   
+    });
+$('.button').on('click',function()
+{
+  startGame();   
+});
+function startGame()
+{
+  if(!started)
         {
             $("h1").text("Level " + level);
             nextSequence();
             started = true ;
         }
-    });
-
+}
 $('.btn').on('click',function()
 {
     let userChosenColour = $(this).attr("id");
@@ -53,6 +59,7 @@ function checkSequence(currentLevel)
           }, 1000);
         }
       } else {
+        started = false;
         playSound("wrong");
         $("body").addClass("game-over");
         $("h1").text("Game Over, Press Any Key to Restart");
@@ -65,9 +72,6 @@ function checkSequence(currentLevel)
               localStorage.setItem("highScore", level);
               $("#high-score").text("High Score: " + level);
           }
-          setTimeout(function () {
-              nextSequence();
-          }, 1000);
         startOver();
       }
 }
