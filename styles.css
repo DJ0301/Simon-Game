@@ -101,6 +101,7 @@ a {
   text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 button.bluebtn {
   margin: auto;
   color: white;
@@ -147,4 +148,21 @@ button.red:active {
   background: -ms-linear-gradient(top, #D74736, #AD2719);
 }
 
+=======
+.button {
+  text-decoration: none;
+  border: 1px solid rgb(146, 148, 248);
+  position: relative;
+  overflow: hidden;
+}
+
+.button:hover {
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+
+.button:hover:before {
+  left: 100%;
+}
+>>>>>>> parent of dc3e635 (start button updated)
 
