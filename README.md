@@ -1,43 +1,51 @@
 # Simon Game
 
-Simon Game is a classic memory game where players need to remember and repeat a sequence of colors. The game starts with a single color, and with each level, a new color is added to the sequence. Players need to repeat the sequence correctly to progress through the levels.
+The Simon Game is a classic memory game where players need to remember and repeat a pattern of colors and sounds.
 
-## How to Play
+## Description
 
-1. Press any key to start the game.
-2. Watch and remember the sequence of colors that light up.
-3. Click on the buttons to repeat the sequence in the correct order.
-4. Each successful round adds a new color to the sequence.
-5. If you make a mistake, the game ends and you can restart by pressing any key.
+This web-based Simon Game project allows users to play the Simon Game in their browser. The game generates a sequence of colors and sounds that the player must repeat. The player progresses through levels by successfully mimicking the pattern.
 
 ## Features
 
-- Dynamic Levels: Each level adds a new color to the sequence, making the game progressively challenging.
-- Visual and Auditory Cues: Colors light up and corresponding sounds are played, enhancing the gaming experience.
-- Feedback for Correct and Incorrect Moves: The game provides instant feedback on correct and incorrect sequence repetitions.
-- Interactive Buttons: Clickable buttons allow you to participate and repeat the pattern.
+- Generates random sequences of colors and sounds for the player to follow.
+- Allows players to start the game with a key press.
+- Tracks and displays the player's progress through levels.
+- Uses sounds and animations to provide a dynamic gaming experience.
+- Displays and updates the player's high score using local storage.
+
+## How to Play
+
+1. Open the game in your browser.
+2. Press any key to start the game.
+3. The game will display a sequence of colors and play corresponding sounds.
+4. Repeat the sequence by clicking the buttons in the correct order.
+5. As you progress, the sequences will become longer and more challenging.
+
+## High Score and Local Storage
+
+The game uses local storage to store and display the player's high score. The high score is the highest level the player has reached. This allows players to compete with themselves and aim for a higher score each time they play.
+
+- When you achieve a new high score, it will be stored in your browser's local storage.
+- The high score is displayed at the top of the game interface.
+- If you clear your browser's cache or play on a different device, your high score will be reset to the default value.
+
+## Getting Started
+
+1. Clone or download this repository.
+2. Open the `index.html` file in a web browser to play the game.
+3. Use your keyboard to start the game and your mouse to click the colored buttons.
 
 ## Technologies Used
 
-- HTML: Structure of the game.
-- CSS: Styling and animations for visual appeal.
-- JavaScript: Logic and interactivity.
-- jQuery: Simplifies DOM manipulation and event handling.
-- Audio: Sound effects to enhance the gameplay.
-
-## How to Run the Game
-
-1. Download or clone the repository.
-2. Open the `index.html` file in a web browser.
-3. Follow the on-screen instructions to play the game.
-4. Press any key to start the game.
+- HTML, CSS, JavaScript
+- jQuery library for DOM manipulation
+- Local storage for storing and retrieving high scores
 
 ## Credits
 
-- Game idea inspired by the classic Simon game.
-- Sound effects from [FreeSound](https://freesound.org/).
+This project was inspired by the classic Simon electronic game.
 
+## License
 
-## Acknowledgements
-
-Thanks to the creators of the Simon game and the resources used to build this version. This project was created for learning purposes and to practice front-end web development skills. Have fun and challenge your memory with Simon Game!
+This project is licensed under the MIT Licens
