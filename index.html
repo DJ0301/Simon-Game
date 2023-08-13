@@ -3,20 +3,53 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Simon Game</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 
 <body>
+  <div id="how-to-play-modal" class="modal">
+    <div class="modal-content">
+      <h2>How to Play Simon Game</h2>
+      
+      <p><strong>Simon Game</strong> is a classic memory and pattern recognition game. The goal is to repeat the sequence of colored buttons that the game presents to you. As you successfully repeat the sequence, the game will keep adding new steps, making the sequence longer and more challenging. Your objective is to reach the highest level possible and beat your own high score.</p>
+      
+      <h3>Gameplay</h3>
+      <ol>
+        <br><strong>Starting the Game:</strong> When you open the game, you'll see a display with the text "Press A Key to Start." Press any key on your keyboard to begin the game.</li>
+        <br><strong>Following the Sequence:</strong> The game will show a sequence of colored buttons, lighting them up one by one. Pay close attention to the sequence and remember the order in which the buttons light up.</li>
+        <br><strong>Repeating the Sequence:</strong> After the sequence is shown, it's your turn to repeat it. Click on the buttons in the same order as they were lit up in the sequence.</li>
+        <br><strong>Advancing Levels:</strong> If you successfully repeat the sequence, the game will add another step to the sequence, making it longer. Keep following the sequence as it gets more complex with each level.</li>
+        <br><strong>High Score:</strong> The game keeps track of your high score, which is the highest level you've reached. Try to beat your own high score by reaching higher levels in subsequent games.</li>
+        <br><strong>Wrong Move:</strong> If you click a button out of order or make a mistake, you'll hear a sound indicating the mistake, and the game will show "Game Over, Press Any Key to Restart." Press any key to start a new game.</li>
+      </ol>
+      
+      <h3>Controls</h3>
+      <ul>
+        <br><strong>Keyboard:</strong> Press any key on your keyboard to start the game and advance through the levels.</li>
+        <br><strong>Mouse:</strong> Click on the colored buttons to repeat the sequence.</li>
+      </ul>
+      
+      <h3>Tips</h3>
+      <ul>
+        <br>Focus on memorizing the sequence one step at a time.</li>
+        <br>Take your time, especially as the sequence gets longer.</li>
+        <br>Pay attention to the sound and visual cues to keep track of the sequence.</li>
+        <br>Challenge yourself to beat your own high score by reaching higher levels.</li>
+      </ul>
+      
+      <p>Have fun playing Simon Game and challenging your memory and pattern recognition skills!</p>
+      
+      <button class="close red">CLOSE</button>
+    </div>
+  </div>
+  
+
   <h3 id ="high-score"></h3>
   <h1 id="level-title">Press any key to start</h1>
-  <button class="button">
-    <span>START</span>
-    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0"/>
-    </svg>
-  </button>
+  <button class="start bluebtn">START</button>
   <div class="container">
     <div class="row">
 

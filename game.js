@@ -5,6 +5,7 @@ let started = false;
 let level = 0;
 let highScore = 0;
 $(document).ready(function () {
+  $("#how-to-play-modal").show();
   highScore = localStorage.getItem("highScore");
   if (highScore !== null) {
       $("#high-score").text("High Score: " + highScore);
@@ -12,7 +13,10 @@ $(document).ready(function () {
       $("#high-score").text("High Score: 0");
   }
 });
-
+$('.close').on('click',function ()
+{
+  $("#how-to-play-modal").hide();
+})
 const nextSequence = () =>
 {
     userClickedPattern = [];
@@ -29,7 +33,7 @@ $(document).on('keypress',function()
     {
       startGame();   
     });
-$('.button').on('click',function()
+$('.start').on('click',function()
 {
   startGame();   
 });
